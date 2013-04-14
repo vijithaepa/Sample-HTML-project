@@ -6,27 +6,36 @@ body {
 	font-family: Times;
 	color: white;
 }
+/* Common styles */
+a {
+	height: 40px;
+	text-decoration: none;
+	color: white;
+}
+
+section {
+	border: 1px white solid;
+}
 
 #container {
-	height: 933px;
+	height: 930px;
+	width: 1150px;
+	margin: 0px auto;
 	border: 1px solid blue;
 }
 
 #left_column {
 	float: left;
 	width: 300px;
-	height: 680px;
+	height: 630px;
 	border: 1px solid yellow;
 }
 
 #right_column {
 	float: left;
 	width: 820px;
-	border: 1px solid blue;
-}
-
-section {
-	border: 0px green solid;
+	height: 630px;
+	border: 1px solid yellow;
 }
 
 #logo {
@@ -38,7 +47,7 @@ section {
 
 #menu {
 	width: 300px;
-	height: 360px;
+	height: 420px;
 }
 
 #menu ul {
@@ -56,34 +65,37 @@ section {
 	margin: 10px auto;
 }
 
-#menu a {
-	height: 40px;
-	text-decoration: none;
-	color: white;
-}
-
 #menu li:hover {
 	background-color: #F11111;
 }
 
 #merqueu {
+	width: 818px;
 	height: 60px;
 	border: 1px solid red;
+	height: 60px;
 }
 
 /* -- home Page */
 #main_display {
-	width: 500px;
+	width: 800px;
 	margin: 0px auto;
-	height: 500px;
+	height: 560px;
 }
 
 /* -- My Page > Login */
 #login_form {
 	height: 170px;
-	width: 380px;
+	width: 350px;
 	padding: 60px;
-	margin: 120px auto;
+	margin: 80px auto;
+}
+
+#login_form #title {
+	font-size: x-large;
+	color: gray;
+	width: 300px;
+	margin: 10px auto;
 }
 
 #login_form label {
@@ -92,36 +104,53 @@ section {
 	width: 100px;
 	height: 25px;
 	margin: 10px 0px;
+	border: 0px solid red;
 }
 
 #login_form input.text {
+	float: right;
 	width: 200px;
-	/* 	height: 25px; */
-	margin: 10px 30px;
+	margin-bottom: 20px;
 	padding: 5px;
-	margin: 10px 30px
+}
+
+#login_form #buttons {
+	float: right;
+	width: 180px;
+	height: 45px;
+	margin-right: 0px;
+	border: 0px solid yellow;
 }
 
 #login_form input.button {
-	float: left;
+	float: right;
 	padding: 5px 10px 5px 10px;
-	margin: 10px 15px 0px 0px;
+	margin-left: 10px;
+	margin-top: 10px;
 	width: 80px;
 }
 
 #login_form a {
-	margin-top: 6px;
-	margin-right: 40px;
-	float: right;
-	text-decoration: none;
-	color: white;
-	float: right;
-	margin-right: 40px;
+	height: 10px;
+	padding: 5px;
+	float: left;
+	padding: 5px;
+	float: left;
+	border: 0px solid red;
 }
 
 /*  -- MyPage > Register */
 #registry_form {
+	width: 445px;
+	margin: 0px auto;
 	padding: 25px;
+}
+
+#registry_form #title {
+	font-size: x-large;
+	color: gray;
+	width: 500px;
+	margin: 10px auto;
 }
 
 #registry_form label {
@@ -158,7 +187,95 @@ section {
 	margin-left: 30px;
 }
 
-#registry_form div.button{
+#registry_form div.button {
 	float: right;
 	margin: 25px 44px;
+}
+
+/* My Photo view page */
+#my_photo_view {
+	width: 750px;
+	height: 540px;
+	margin: 0px auto;
+	margin: 10px auto;
+	border: 1px solid red;
+}
+
+#my_photo_view #title {
+	font-size: x-large;
+	color: gray;
+	width: 500px;
+	padding: 20px;
+}
+
+#my_photo_view textarea {
+	float: left;
+	width: 550px;
+	height: 450px;
+	width: 450px;
+	height: 450px;
+	margin: 10px 10px;
+}
+
+#my_photo_view section {
+	width: 240px;
+	float: right;
+	margin: 10px 10px;
+	height: 450px;
+}
+
+#my_photo_view a {
+	font-size: large;
+	margin-left: 20px;
+}
+
+/*  -- Photo Upload Page */
+#my_photo_upload {
+	width: 500px;
+	margin: 50px auto;
+}
+
+#my_photo_upload #title {
+	font-size: x-large;
+	color: gray;
+	width: 400px;
+	margin: 10px auto;
+}
+
+#my_photo_upload label {
+	vertical-align: text-bottom;
+	float: left;
+	width: 130px;
+	height: 20px;
+	margin: 10px 0px;
+	padding-left: 25px;
+}
+
+#my_photo_upload input.text {
+	float: left;
+	width: 200px;
+	margin: 10px 30px;
+	padding: 5px;
+	margin: 10px 30px;
+	width: 200px;
+}
+
+#my_photo_upload textarea {
+	float: left;
+	margin: 0px 30px;
+	width: 210px;
+}
+
+#my_photo_upload #buttons {
+	float: right;
+	margin-right: 90px;
+	border: 0px solid yellow;
+}
+
+#my_photo_upload input.button {
+	float: right;
+	padding: 5px 10px 5px 10px;
+	margin-right: 10px;
+	margin-top: 20px;
+	width: 80px;
 }
